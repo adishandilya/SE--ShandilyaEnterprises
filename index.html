@@ -364,28 +364,49 @@ Lal Kurti, Chotta Bazar, Meerut Cantt
 
 <script>
 
-const products=[
+const products = [
 
-{name:"Yellow Red Floral Krishna Ji Poshak",price:199,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/76PRPFKP/Yellowred.jpg"},
-{name:"Multicolor Layered Krishna Ji Poshak",price:219,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/fRXp8j34/whitebluered.jpg"},
-{name:"Red White Designer Krishna Ji Poshak",price:199,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/k4wkxJ26/redwhite.jpg"},
-{name:"Sky Blue Lotus Style Krishna Ji Poshak",price:189,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/3J6QSxn3/bluewhite.jpg"},
-{name:"Pink Flower Premium Krishna Ji Poshak",price:209,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/5yTK36b2/pinkonly.jpg"},
+{
+name:"Yellow Red Floral Krishna Ji Poshak",
+price:199,
+cat:"Laddu Gopal Poshak",
+img:"https://i.postimg.cc/76PRPFKP/Yellowred.jpg",
+desc:"Bright yellow and red handcrafted floral poshak perfect for festive darshan."
+},
 
-{name:"Royal Yellow Poshak",price:249,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/76PRPFKP/Yellowred.jpg"},
-{name:"Festival Special Krishna Dress",price:229,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/k4wkxJ26/redwhite.jpg"},
-{name:"Premium Lotus Poshak",price:279,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/3J6QSxn3/bluewhite.jpg"},
-{name:"Peacock Style Poshak",price:259,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/fRXp8j34/whitebluered.jpg"},
-{name:"Radha Krishna Floral Dress",price:219,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/5yTK36b2/pinkonly.jpg"},
+{
+name:"Multicolor Layered Krishna Ji Poshak",
+price:219,
+cat:"Laddu Gopal Poshak",
+img:"https://i.postimg.cc/fRXp8j34/whitebluered.jpg",
+desc:"Beautiful multi-layer poshak with blue, yellow and white petals for a divine festive look."
+},
 
-{name:"Handwork Krishna Dress",price:289,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/76PRPFKP/Yellowred.jpg"},
-{name:"Designer Festival Poshak",price:269,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/fRXp8j34/whitebluered.jpg"},
-{name:"Royal Darbar Poshak",price:299,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/k4wkxJ26/redwhite.jpg"},
-{name:"Pink Premium Lotus Dress",price:249,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/5yTK36b2/pinkonly.jpg"},
-{name:"Classic Blue Krishna Dress",price:239,cat:"Laddu Gopal Poshak",img:"https://i.postimg.cc/3J6QSxn3/bluewhite.jpg"}
+{
+name:"Red White Designer Krishna Ji Poshak",
+price:199,
+cat:"Laddu Gopal Poshak",
+img:"https://i.postimg.cc/k4wkxJ26/redwhite.jpg",
+desc:"Elegant red and white designer poshak crafted with decorative net fabric for Thakur Ji."
+},
+
+{
+name:"Sky Blue Lotus Style Krishna Ji Poshak",
+price:189,
+cat:"Laddu Gopal Poshak",
+img:"https://i.postimg.cc/3J6QSxn3/bluewhite.jpg",
+desc:"Sky blue lotus style poshak giving a royal and graceful appearance to Laddu Gopal."
+},
+
+{
+name:"Pink Flower Premium Krishna Ji Poshak",
+price:209,
+cat:"Laddu Gopal Poshak",
+img:"https://i.postimg.cc/5yTK36b2/pinkonly.jpg",
+desc:"Soft pink floral poshak designed to give a charming and devotional look."
+}
 
 ]
-
 let cart=JSON.parse(localStorage.getItem("cart"))||[]
 
 function renderProducts(list){
